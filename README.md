@@ -35,4 +35,3 @@ The method shout of Foo received an invalid named parameter(s): msg_
   in any enter at gen/moar/m-Metamodel.nqp line 3927
   in block <unit> at t/strict2.t line 19
 ```
-
