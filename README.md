@@ -1,5 +1,6 @@
 # StrictNamedArgumentsd
 [![Build Status](https://travis-ci.org/nxadm/StrictNamedArguments.svg?branch=master)](https://travis-ci.org/nxadm/StrictNamedArguments)
+
 While Perl 6 is strict on types when one is specified in the parameter
 definition, the default behaviour for values for unknown named parameters
 in methods (and constructors) is just to ignore them.
