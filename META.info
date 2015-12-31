@@ -2,8 +2,8 @@
     "perl" : "6.*",
     "name" : "StrictNamedArguments",
     "version" : "0.1.0",
-    "description" : "Watch your fingers when typing named arguments",
-    "authors" : [ "Claudio Ramirez", "Wenzel P. P. Peppmeyer"],
+    "description" : "Guards against extra named arguments on methods.",
+    "authors" : [ "Claudio Ramirez", "Wenzel P. P. Peppmeyer" ],
     "provides" : {
         "StrictNamedArguments" : "lib/StrictNamedArguments.pm"
     },
