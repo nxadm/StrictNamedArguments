@@ -10,8 +10,14 @@ class X::Parameter::ExtraNamed is Exception {
 	has $.classname;
 	has $.method-name;
 	method message () {
-		"The method $.method-name of $.classname received " ~ 
-		"an invalid named parameter(s): $.extra-parameters";
+        state ($r, $c, $g);
+        once { 
+            ($r, $c, $g) = '','','';
+            try { ($r, $c, $g ) = Rakudo::Internals.error-rcgye; } # red, clear, green, yelow, eject
+        }
+		
+        "The method $g$.method-name$c of $g$.classname$c received " ~ 
+		"an invalid named parameter(s): $r$.extra-parameters$c";
 	}
 }
 
@@ -56,3 +62,4 @@ multi sub trait_mod:<is>(Method $m, :$strict!) is export {
 	}
 }
 
+# vim: ft=perl6 expandtab sw=4
