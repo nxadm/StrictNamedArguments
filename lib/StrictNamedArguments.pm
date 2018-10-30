@@ -1,5 +1,5 @@
-unit module StrictNamedArguments;
 use v6;
+unit module StrictNamedArguments;
 
 # First we need some exception to throw. Perl 6 kindly creates a
 # constructor for us that deals with filling all attributes with
